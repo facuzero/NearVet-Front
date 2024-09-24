@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .bg-lightBG {
+    background-color: #ffff;
+  }
+
+  .bg-darkBG {
+    background-color: #333333;
+  }
+
+  .text-lightText {
+    color: #686868;
+  }
+
+  .text-darkText {
+    color: #A3A3A3;
+  }
+
+  .text-lightHline {
+    color: #333333;
+  }
+
+  .text-darkHline {
+    color: #CCCCCC;
+  }
+}
+
+body {
+  @apply bg-lightBG text-lightText dark:bg-darkBG dark:text-darkText;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply text-lightHline;
+}
+
+/* @media (prefers-color-scheme: dark) {
+  body {
+    @apply bg-darkBG text-darkText;
+  }
+
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply text-darkHline;
+  }
+} */
